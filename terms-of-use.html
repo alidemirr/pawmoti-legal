@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PawMoti — Kullanım Koşulları / Terms of Use</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap">
+<style>
+  :root {
+    --page-bg: #eee8ff;
+    --paper: #ffffff;
+    --ink: #2e2a3d;
+    --muted: #7c7490;
+    --accent: #7c6ae6;
+    --accent-soft: #efebfb;
+    --rule: #e6def8;
+    --toggle-bg: #e2d9f7;
+    --shadow: 0 1px 2px rgba(60, 44, 120, 0.05), 0 22px 44px -24px rgba(60, 44, 120, 0.3);
+    --brand: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --page-bg: #15121f;
+      --paper: #1f1b2c;
+      --ink: #e9e4f5;
+      --muted: #9a92ad;
+      --accent: #b3a4f2;
+      --accent-soft: #2b2540;
+      --rule: #322c45;
+      --toggle-bg: #2b2540;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 24px 48px -24px rgba(0, 0, 0, 0.7);
+    }
+  }
+  :root[data-theme="dark"] {
+      --page-bg: #15121f;
+      --paper: #1f1b2c;
+      --ink: #e9e4f5;
+      --muted: #9a92ad;
+      --accent: #b3a4f2;
+      --accent-soft: #2b2540;
+      --rule: #322c45;
+      --toggle-bg: #2b2540;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 24px 48px -24px rgba(0, 0, 0, 0.7);
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--page-bg); }
+  body {
+    margin: 0;
+    background: var(--page-bg);
+    color: var(--ink);
+    font-family: var(--body);
+    line-height: 1.7;
+    padding: 2.5rem 1rem 5rem;
+  }
+
+  .topbar {
+    max-width: 42rem;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .lang-switch {
+    display: inline-flex;
+    background: var(--toggle-bg);
+    border-radius: 999px;
+    padding: .25rem;
+    gap: .15rem;
+  }
+  .lang-switch button {
+    font-family: var(--brand);
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .01em;
+    color: var(--muted);
+    background: transparent;
+    border: none;
+    border-radius: 999px;
+    padding: .4rem .95rem;
+    cursor: pointer;
+    transition: background .18s ease, color .18s ease;
+  }
+  .lang-switch button:hover { color: var(--ink); }
+  .lang-switch button[aria-pressed="true"] {
+    background: var(--paper);
+    color: var(--accent);
+    box-shadow: 0 1px 3px rgba(60, 44, 120, .12);
+  }
+  .lang-switch button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .brand {
+    font-family: var(--brand);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    margin: 0;
+  }
+
+  .doc {
+    max-width: 42rem;
+    margin: 0 auto;
+    background: var(--paper);
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+    padding: 3rem 3rem 3.5rem;
+  }
+  @media (max-width: 640px) {
+    body { padding: 1.25rem .75rem 4rem; }
+    .doc { padding: 2rem 1.25rem 2.5rem; border-radius: 18px; }
+  }
+
+  .doc-header { margin-bottom: 2.25rem; padding-bottom: 1.75rem; border-bottom: 1px solid var(--rule); }
+  h1 {
+    font-family: var(--brand);
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 1.15rem;
+    letter-spacing: -.015em;
+    text-wrap: balance;
+  }
+
+  h2 {
+    font-family: var(--brand);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 2.6rem 0 .8rem;
+    color: var(--ink);
+    letter-spacing: -.005em;
+  }
+  h2:first-of-type { margin-top: 0; }
+  p { margin: 0 0 1.1rem; font-size: .96rem; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+
+  footer { color: var(--muted); font-size: .8rem; margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); text-align: center; }
+  footer a { color: var(--muted); text-decoration: underline; }
+  footer .effective { margin: .4rem 0 0; font-size: .75rem; opacity: .8; }
+
+  .controls { display: inline-flex; align-items: center; gap: .5rem; }
+  .theme-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 2.1rem; height: 2.1rem;
+    background: var(--toggle-bg); color: var(--muted);
+    border: none; border-radius: 999px; cursor: pointer;
+    transition: color .18s ease, background .18s ease;
+  }
+  .theme-toggle:hover { color: var(--accent); }
+  .theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .theme-toggle svg { width: 1.05rem; height: 1.05rem; }
+  :root:not([data-theme="dark"]) .icon-sun { display: none; }
+  :root[data-theme="dark"] .icon-moon { display: none; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .icon-moon { display: none; }
+    :root:not([data-theme="light"]) .icon-sun { display: revert; }
+    :root[data-theme="light"] .icon-sun { display: none; }
+  }
+  .logo { width: auto; height: 1.85rem; display: block; }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    .doc { box-shadow: none; border-radius: 0; max-width: 100%; padding: 1rem 0; }
+    .lang-switch { display: none; }
+    [hidden] { display: revert !important; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .lang-switch button { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <p class="brand"><img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABICAMAAACDWFYkAAADAFBMVEVMaXF0YNZxXdCtnPNvXM6qh/iwnfSPh+x+dd8tIO5yXtSGcd3Fuu/k3/e/s+yjkueJdtvs6PmNd+hzXtSIdOLVzfPPxfGMeOaMd+DCtu6Ugua6rOxxXdKOeeSRfOl0YNSMd+KNeeN1YNfLwPGGceKnlvF1ZNOJdOKNd+SEcN+djOKPe+KIc+OHddyQfOeQe+ZzX9aPe+Z2YtaPe+Gpmeevn+iRfuJ2Ytp0YNaMeN+HdOKSfeaHd92Oe+XZ0vWPeueJdeGah+SQeuSHct+McuF0X9J2YdSPfOd+adyNeOKJc+dxXtKDb9+Hc+R4Ytf///////7LvfnKvPmyoPazovXJu/r+/f2JduDIuviyofaxoPS1pPbMv/q0ovb8/P79+/z+2qvRxPr9//+3pvd0XtXLvvnazfz916X9lDXXyvz7+/3+/v+AZdx/at19Y9z9kC392Kn9n0eEat6AbN6Gbd+6qfebi999adyYg+WOduKOd+3Hufn+1aP+1aH9262BaN39nEL+kzGPeunWyPvYy/zJu/hyXNSLc+GIcN+Db+SKc+ywn/WjjumDb9+QeO+Jcs39o0z+lzf9vX39zpeGct57YNusnOn5+P2KdOfTx/qmk+q4p/HOwPnCsvX+jSj9w4P9pVP9wof9qVjp5PiJceGql+uQeuSBbNmum+13Ytna0Pz+s2j90Jq/sPj9057Dtfn9yY37hzjGt/qfiue1pO3v6vySe/GVf+T29fze2PXr5f2jlOH+mj79u3T9xY79ypLCs/j6+v13YeGch+aNd+bx7/vcz/6fj+G+rfOyoO39tG39mDuWgO3d0vzGtvb+3rD9r2H9jjqFbevn4fv++PL81ab9rWj8gSr8p1/8fSWKbsX6fiu9rfiTfOK6qfJ6Zdf9+vZ6ZOD+0KWmleb+38L8hjCJZrr8n1b6j0L7lUj9kT6La779t3j7cxr7eSB3YtTg1/yAaeLSyPP99e798+n+2rr969n8kTP7ol36mFGXht3cx9itgbDSn5+yf6P959LU2izDAAAAxXRSTlMA9OP+4wP+AQQB9BD9/v39/v70IjD+/Y1H/vr+86Pu1sKZ5/7b/RqAKsj+dOY61K6UTERj/P37ic96t4EKav7IIv1e9SZtvXzs9vmfzMz6/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////vq+mysAAAAJcEhZcwAAA+gAAAPoAbV7UmsAAAozSURBVEjHfVcHXFPXGr8VMSBLUFBAsc5ad6u1W2v7ut743QvEvATMpCQBQhbpIwmZJJEAESGUvadQKAVFhqyHgDIq4h4UrcX5tHa3r2/2OzdR6dB/cs8995zvf77vfOeec78Po2DzN89avHjx3MVz585d/IQTc8kC4HxAVRBa/qf5GAXDnn3n64QPnPjrY/HBB4lHnngWw+avT/UZ58Z8CDheQA8LCwuNjg4Li3YiNAwB1eh//+j9yIig+ifmYwvTfLjmw4cOHTp8+vRxoDiEHAgFevTu3WFJIM5kMBhU5qdBRzZjf84vKf7q0OkPucXRFjrSEmZBgKF3R0MVSUcxqYzwcAaVQaVGudQvxVYOJu0uOF6cRLc4AEOjscPopHBUFJPBZFJJAInKTL8yC3s6/zI3jB4WjQRJo+gHPv7o0/ejIhnIkshIqhMMRgSVERG5qv4F7Cl10C5SMinJIRsVFckEUYSoyAegMhEio+ZdfR7zWJk/b1VEBJUKF5PJQDUqWdwHPESQSHdxWTXv6tLVGLZm6ZH6L7/cs2fPew6QlT2O2h6y2dmz58sr4qtLF2CwmB5vvnVl/7/+9gDHurqmu7qOHYN717GuY2TbWlTsr3/rTQ+0+hQ3bENtYRxO4ABUdHgFeI/UTPtM57YG+nvloVaC7MlNXYS5AQPD3LAt+cFELItNY7HxoRU+VnFOjlgvV8hFOYCUXH8WdLLY/bj3qVdB2EFZl+aJx9JoLFq/55TeOlA3PF4MCLWMD9fZVCLRwSqcRaPF4itOPfWA8qI6ADUSedNiRYrSVjNSVELnxhw9yo/hFyjlUzkqL4JNY+MBaTMoGQGghYW35lit1Va5SCQW66vbC4vGTdydOQe5NaKd/UjLTMo6NRjGIqoUUyXjdDp9fLio7mCtQpyjUCrFSq65WKX3x2Njcc9TLzoprtgz+a0Eqx/3zGk9bjbzzWZzjNnEpV+uUcn1A8Umk02ub0VDBqe+DsIIFOwPfrY8UBws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" alt="" width="21" height="30" />PawMoti</p>
+  <div class="controls">
+    <div class="lang-switch" role="group" aria-label="Dil seçimi / Language">
+      <button type="button" id="btn-tr" aria-pressed="true">Türkçe</button>
+      <button type="button" id="btn-en" aria-pressed="false">English</button>
+    </div>
+    <button type="button" id="btn-theme" class="theme-toggle" aria-label="Koyu veya açık tema" title="Koyu / açık tema"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+  </div>
+</div>
+
+<div class="doc">
+<main>
+
+<section id="doc-tr" lang="tr">
+<header class="doc-header">
+  <h1>PawMoti Kullanım Koşulları (Local-Only Beta)</h1>
+</header>
+
+<h2>1. Kabul</h2>
+<p>PawMoti'yi indirerek veya kullanarak bu Koşulları,
+<a href="./privacy-policy.html">Gizlilik Politikası</a>'nı ve uygulama içindeki Sağlık ve
+Güvenlik Bildirimi'ni (bu Koşulların ayrılmaz parçasıdır) kabul etmiş olursunuz. Kabul
+etmiyorsanız uygulamayı kullanmayınız.</p>
+
+<h2>2. Yaş Şartı</h2>
+<p>PawMoti yalnızca 13 yaş ve üzeri kullanıcılar tarafından kullanılabilir. 18 yaşından küçük
+kullanıcılar, uygulamayı ebeveyn veya yasal vasilerinin bilgisi ve onayı altında kullanmalıdır.
+Uygulamayı indirerek ve kullanarak; bu yaş şartını karşıladığınızı veya 18 yaşından küçükseniz
+gerekli ebeveyn/yasal vasi onayını aldığınızı beyan etmiş olursunuz.</p>
+
+<h2>3. Hizmetin Tanımı ve Beta Niteliği</h2>
+<p>PawMoti; odaklanma, nefes ve enerji egzersizleri ile kişisel üretkenlik için tasarlanmış bir
+uygulamadır. Bu sürüm ücretsiz, hesap gerektirmeyen ve çevrimdışı çalışan bir <strong>beta</strong>
+sürümüdür: hatalar içerebilir, özellikler değiştirilebilir, kaldırılabilir veya beta programı
+sona erdirilebilir. Bulut senkronizasyonu, sosyal özellikler ve çok cihazlı geri yükleme sunulmaz.</p>
+
+<h2>4. Kullanım Lisansı</h2>
+<p>Size; uygulamayı kişisel ve ticari olmayan amaçlarla kullanmanız için sınırlı, münhasır
+olmayan, devredilemez ve alt lisans verilemez bir kullanım izni tanınır. Uygulamanın mülkiyeti
+ve fikri mülkiyet hakları size devredilmez.</p>
+
+<h2>5. Yasaklı Kullanımlar</h2>
+<p>Uygulamayı yalnızca hukuka uygun amaçlarla ve bu Koşullara uygun şekilde kullanmayı kabul
+edersiniz. Aşağıdakiler açıkça yasaktır: (a) uygulamanın tersine mühendisliği, kaynak koda
+dönüştürülmesi veya türev çalışmalar oluşturulması (emredici mevzuattan doğan istisnalar
+saklıdır); (b) güvenlik ve şifreleme önlemlerinin aşılması veya buna teşebbüs edilmesi; (c) hile,
+bot veya otomasyon araçları kullanılması ya da uygulama içi ekonomi, ödül ve ilerleme
+sistemlerinin manipüle edilmesi; (d) uygulamanın veya içeriğinin kopyalanması, dağıtılması,
+kiralanması, satılması ya da ticari olarak kullanılması; (e) uygulamanın diğer kullanıcılara,
+üçüncü kişilere veya PawMoti'ye zarar verecek şekilde kullanılması. Bu maddenin ihlali, erişimin
+sonlandırılmasına yol açabilir.</p>
+
+<h2>6. Fikri Mülkiyet</h2>
+<p>Uygulama; yazılım kodu, arayüz tasarımı, PawMoti adı ve logosu, pet karakterleri, çizimler,
+animasyonlar, metinler, sesler ve oyunlaştırma unsurları dahil olmak üzere, uygulamanın
+geliştiricisi Ali Demir'e aittir veya lisanslı olarak kullanılmaktadır ve fikri mülkiyet
+mevzuatı ile korunur. Bu Koşullar size 4. maddedeki sınırlı kullanım izni dışında hiçbir hak
+vermez. Açık kaynak bileşenler kendi lisans koşullarına tabidir (bkz. uygulama içindeki Açık
+Kaynak Lisansları ekranı).</p>
+
+<h2>7. Sağlık ve Güvenlik</h2>
+<p>PawMoti'nin nefes, odak ve enerji egzersizleri yalnızca refah ve farkındalık amacıyla
+sunulmaktadır. Uygulama; bir tıbbi cihaz, sağlık uygulaması veya teşhis aracı değildir ve tıbbi
+tanı, tedavi veya reçete yerine geçmez. Detaylar için uygulama içindeki "Sağlık ve Güvenlik
+Bildirimi"ni inceleyiniz; söz konusu bildirim, işbu Koşulların ayrılmaz bir parçasıdır.</p>
+
+<h2>8. Garanti Reddi</h2>
+<p>Uygulama, mevzuatın izin verdiği azami ölçüde "olduğu gibi" ve "mevcut hâliyle" sunulur;
+kesintisiz veya hatasız çalışacağı taahhüt edilmez. Satılabilirlik, belirli bir amaca uygunluk
+ve ihlal etmeme dahil hiçbir açık veya zımni garanti verilmez. Tüketicilerin emredici mevzuattan
+doğan hakları saklıdır.</p>
+
+<h2>9. Sorumluluğun Sınırlandırılması</h2>
+<p>Kast veya ağır ihmal hâlleri ile ölüm ve bedensel zararlar hariç olmak üzere; PawMoti,
+yürürlükteki mevzuatın izin verdiği azami ölçüde, uygulamanın kullanımından veya
+kullanılamamasından doğan dolaylı, arızi, özel veya sonuçsal hiçbir zarardan (kâr kaybı, veri
+kaybı, iş veya itibar kaybı dahil) sorumlu tutulamaz. Aynı istisnalar saklı kalmak kaydıyla ve
+uygulamanın ücretsiz olarak sunulduğu göz önünde bulundurularak, PawMoti'nin herhangi bir hukuki
+teori altındaki toplam sorumluluğu, yürürlükteki mevzuatın izin verdiği azami ölçüde, kullanıcının
+doğrudan ve kanıtlanmış zararıyla sınırlıdır. Bu sınırlandırma, tüketicilerin AB tüketici mevzuatı
+veya yerel emredici mevzuat kapsamındaki haklarını etkilemez.</p>
+
+<h2>10. Veri Kaybı</h2>
+<p>Yerel verilerin korunması kullanıcının sorumluluğundadır. Bu sürümde yedekleme ve cihazlar
+arası aktarım bulunmadığından uygulamanın silinmesi, cihazın sıfırlanması veya kaybolması kalıcı
+veri kaybına yol açar. Dışa aktarma yalnızca okunabilir bir kopya üretir; geri yükleme için
+kullanılamaz.</p>
+
+<h2>11. Ücretler</h2>
+<p>Bu beta sürümünde uygulama içi satın alma, abonelik veya gerçek para ödemesi yoktur; tüm beta
+özellikleri ücretsizdir. Ücretli özellikler ancak beta sonrasında, güncellenmiş koşullar ve
+mağaza bilgilendirmeleriyle sunulabilir.</p>
+
+<h2>12. Mücbir Sebep, Bölünebilirlik ve Değişiklikler</h2>
+<p>PawMoti; doğal afetler, savaş, salgın hastalık, hükümet kararları, internet veya
+telekomünikasyon altyapısındaki kesintiler, üçüncü taraf hizmet sağlayıcıların arızaları ve
+makul kontrolü dışındaki benzer olaylar nedeniyle yükümlülüklerini yerine getirememesinden
+sorumlu tutulamaz.</p>
+<p>Bu Koşulların herhangi bir hükmünün yetkili bir mahkeme tarafından geçersiz, hükümsüz veya
+uygulanamaz bulunması durumunda, diğer hükümler tam olarak yürürlükte kalmaya devam eder.
+Geçersiz sayılan hüküm, asıl amaca en yakın geçerli hükümle değiştirilmiş sayılır.</p>
+<p>Bu Koşullar zaman zaman güncellenebilir. Önemli değişiklikler, yürürlüğe girmeden en az 30
+gün önce uygulama içinden duyurulur. Değişiklikleri kabul etmiyorsanız uygulamayı kullanmayı
+bırakabilirsiniz. Yürürlük tarihinden sonra devam eden kullanım, güncel Koşulların kabulü
+anlamına gelir. Güvenlik veya yasal zorunluluk nedeniyle derhal yürürlüğe girmesi gereken
+değişiklikler saklıdır.</p>
+
+<h2>13. Uygulanacak Hukuk ve Uyuşmazlık Çözümü</h2>
+<p>Bu Koşullar Türkiye Cumhuriyeti hukukuna tabidir ve bu hukuka göre yorumlanır. Avrupa
+Birliği'ndeki kullanıcılar için ikamet ülkelerinin zorunlu tüketici koruma mevzuatı da
+geçerliliğini korur. Bu Koşullardan doğan ve dostane yollarla çözülemeyen uyuşmazlıklarda,
+kanunen görevli ve yetkili mahkemeler ile yürürlükteki mevzuatın öngördüğü hallerde ikamet
+yerinizdeki tüketici hakem heyetleri yetkilidir. Belirli bir şehir mahkemesi münhasır yetkili
+kılınmamıştır.</p>
+</section>
+
+<section id="doc-en" lang="en" hidden>
+<header class="doc-header">
+  <h1>PawMoti Terms of Use (Local-Only Beta)</h1>
+</header>
+
+<h2>1. Acceptance</h2>
+<p>By downloading or using PawMoti, you accept these Terms, the
+<a href="./privacy-policy.html">Privacy Policy</a>, and the Health and Safety Notice presented
+in the app (an integral part of these Terms). If you do not accept them, please do not use the
+app.</p>
+
+<h2>2. Age Requirement</h2>
+<p>PawMoti may only be used by users aged 13 and over. Users under 18 must use the application
+with the knowledge and consent of a parent or legal guardian. By downloading and using the app,
+you represent that you meet this age requirement or, if you are under 18, that you have obtained
+the necessary parental/legal guardian consent.</p>
+
+<h2>3. Description of the Service and Beta Status</h2>
+<p>PawMoti is an application designed for focus, breathing, and energy exercises and personal
+productivity. This release is a free, account-free, offline <strong>beta</strong>: it may
+contain errors, and features may be changed, removed, or the beta program discontinued. Cloud
+sync, social features, and multi-device restore are not provided.</p>
+
+<h2>4. License to Use</h2>
+<p>You are granted a limited, non-exclusive, non-transferable, non-sublicensable license to use
+the app for personal, non-commercial purposes. Ownership of the app and its intellectual
+property rights are not transferred to you.</p>
+
+<h2>5. Prohibited Uses</h2>
+<p>You agree to use the app only for lawful purposes and in accordance with these Terms. The
+following are expressly prohibited: (a) reverse engineering, decompiling, or creating derivative
+works of the app (except as permitted by mandatory law); (b) circumventing or attempting to
+circumvent security and encryption measures; (c) using cheats, bots, or automation tools, or
+manipulating the in-app economy, reward, and progression systems; (d) copying, distributing,
+renting, selling, or commercially exploiting the app or its content; (e) using the app in a way
+that harms other users, third parties, or PawMoti. Violation of this section may result in
+termination of access.</p>
+
+<h2>6. Intellectual Property</h2>
+<p>The app — including its software code, interface design, the PawMoti name and logo, pet
+characters, artwork, animations, texts, sounds, and gamification elements — is owned by the
+app's developer, Ali Demir, or used under license, and is protected by intellectual property
+law. These Terms grant you no rights other than the limited license described in Section 4.
+Open-source components are subject to their own license terms (see the Open Source Licenses
+screen in the app).</p>
+
+<h2>7. Health and Safety</h2>
+<p>PawMoti's breathing, focus, and energy exercises are provided solely for wellness and
+mindfulness purposes. The app is not a medical device, healthcare application, or diagnostic
+tool and is not a substitute for medical diagnosis, treatment, or prescription. For details,
+please review the "Health and Safety Notice" in the app; that notice forms an integral part of
+these Terms.</p>
+
+<h2>8. Disclaimer of Warranties</h2>
+<p>To the maximum extent permitted by law, the app is provided "as is" and "as available";
+uninterrupted or error-free operation is not guaranteed. No express or implied warranties are
+made, including merchantability, fitness for a particular purpose, or non-infringement.
+Consumers' rights under mandatory law remain unaffected.</p>
+
+<h2>9. Limitation of Liability</h2>
+<p>Except in cases of intent or gross negligence, and except for death or personal injury,
+PawMoti shall not be liable, to the maximum extent permitted by applicable law, for any
+indirect, incidental, special, or consequential damages (including loss of profit, loss of data,
+loss of business or reputation) arising from the use of or inability to use the app. Subject to
+the same exceptions, and in view of the app being provided free of charge, PawMoti's total
+liability under any legal theory shall, to the maximum extent permitted by applicable law, be
+limited to the user's direct and proven damages. This limitation does not affect consumers'
+rights under EU consumer law or local mandatory law.</p>
+
+<h2>10. Data Loss</h2>
+<p>You are responsible for protecting local data. Because this version has no backup or
+cross-device transfer, uninstalling the app, resetting the device, or losing it causes permanent
+data loss. Exporting produces a readable copy only; it cannot be used to restore.</p>
+
+<h2>11. Fees</h2>
+<p>This beta has no in-app purchases, subscriptions, or real-money payments; all beta features
+are free. Paid features may only be offered after the beta, with updated terms and store
+disclosures.</p>
+
+<h2>12. Force Majeure, Severability, and Changes</h2>
+<p>PawMoti shall not be liable for any failure to perform its obligations due to natural
+disasters, war, epidemics, government actions, disruptions in internet or telecommunications
+infrastructure, failures of third-party service providers, or similar events beyond its
+reasonable control.</p>
+<p>If any provision of these Terms is found invalid, void, or unenforceable by a competent
+court, the remaining provisions shall remain in full force and effect. The invalid provision
+shall be deemed replaced by a valid provision that most closely reflects the original intent.</p>
+<p>These Terms may be updated from time to time. Material changes will be announced in the app
+at least 30 days before they take effect. If you do not accept the changes, you may stop using
+the app. Continued use after the effective date constitutes acceptance of the updated Terms.
+This does not apply to changes that must take effect immediately for security or legal
+reasons.</p>
+
+<h2>13. Governing Law and Dispute Resolution</h2>
+<p>These Terms are governed by and construed in accordance with the laws of the Republic of
+Turkey. For users in the European Union, the mandatory consumer protection laws of their country
+of residence continue to apply. Disputes arising from these Terms that cannot be resolved
+amicably shall be subject to the courts having statutory jurisdiction and, where applicable law
+so provides, consumer arbitration committees at your place of residence. No single city's courts
+are designated as an exclusive forum.</p>
+</section>
+
+<footer>
+  <p>PawMoti · <a href="mailto:pawmotiapp@gmail.com">pawmotiapp@gmail.com</a></p>
+  <p class="effective">Yürürlük tarihi: 17 Eylül 2026 · Effective date: September 17, 2026</p>
+</footer>
+
+</main>
+</div>
+
+<script>
+  (function () {
+    var btnTr = document.getElementById('btn-tr');
+    var btnEn = document.getElementById('btn-en');
+    var docTr = document.getElementById('doc-tr');
+    var docEn = document.getElementById('doc-en');
+
+    function show(lang) {
+      var isTr = lang === 'tr';
+      docTr.hidden = !isTr;
+      docEn.hidden = isTr;
+      btnTr.setAttribute('aria-pressed', String(isTr));
+      btnEn.setAttribute('aria-pressed', String(!isTr));
+      document.documentElement.lang = lang;
+      try { localStorage.setItem('pawmoti-legal-lang', lang); } catch (e) {}
+    }
+
+    btnTr.addEventListener('click', function () { show('tr'); });
+    btnEn.addEventListener('click', function () { show('en'); });
+
+
+    var btnTheme = document.getElementById('btn-theme');
+    function applyTheme(mode) {
+      if (mode === 'dark' || mode === 'light') document.documentElement.setAttribute('data-theme', mode);
+      else document.documentElement.removeAttribute('data-theme');
+      try { if (mode) localStorage.setItem('pawmoti-legal-theme', mode); } catch (e) {}
+    }
+    btnTheme.addEventListener('click', function () {
+      var current = document.documentElement.getAttribute('data-theme');
+      var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var isDark = current ? current === 'dark' : systemDark;
+      applyTheme(isDark ? 'light' : 'dark');
+    });
+    try {
+      var savedTheme = localStorage.getItem('pawmoti-legal-theme');
+      if (savedTheme) applyTheme(savedTheme);
+    } catch (e) {}
+
+    var saved = null;
+    try { saved = localStorage.getItem('pawmoti-legal-lang'); } catch (e) {}
+    if (saved === 'en') show('en');
+    else if (!saved && (navigator.language || '').slice(0, 2).toLowerCase() !== 'tr') show('en');
+  })();
+</script>
+
+</body>
+</html>
