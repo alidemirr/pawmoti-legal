@@ -202,9 +202,11 @@ için önce e-posta ile iletişime geçiniz.</p>
 
 <h2>2. Özet: Verileriniz cihazınızda kalır</h2>
 <p>PawMoti Local-Only Beta; hesap oluşturmadan, sunucu bağlantısı kurmadan ve otomatik veri
-iletimi yapmadan çalışır. Odak, nefes ve spor seanslarınız, tercihleriniz, oyun ilerlemeniz ve
-uygulama içi kayıtlarınız yalnızca cihazınızda saklanır. Uygulama; analiz, reklam, profilleme
-veya telemetri amacıyla hiçbir kişisel veriyi toplamaz ve hiçbir sunucuya göndermez.</p>
+iletimi yapmadan çalışır. Uygulamaya girdiğiniz veriler (seans geçmişi, notlar, ruh hâli ve
+enerji işaretleri, görevler, takvim etkinlikleri, mektuplar, pet ve oyun ilerlemesi, ayarlar)
+yalnızca cihazınızda ve yalnızca uygulamanın özelliklerini size sunmak için işlenir. Uygulama;
+analiz, reklam, profilleme veya telemetri amacıyla hiçbir kişisel veriyi toplamaz ve hiçbir
+sunucuya göndermez.</p>
 
 <h2>3. Cihazda Saklama ve Güvenlik</h2>
 <p>Uygulama verileri cihazınızın uygulama depolama alanında (AsyncStorage) ve işletim sisteminin
@@ -227,12 +229,16 @@ kullanılmaz ve bildirimler nedeniyle dışarıya veri gitmez.</p>
 <p>E-posta ile geri bildirim göndermeyi, verilerinizi dışa aktarmayı veya Gün Kartı gibi
 görselleri paylaşmayı seçtiğinizde, ilgili veriyi kendi talebinizle seçtiğiniz harici
 uygulamaya (e-posta sağlayıcısı, mesajlaşma uygulaması vb.) iletirsiniz; o hizmetin kendi
-koşulları ve gizlilik politikası geçerli olur.</p>
+koşulları ve gizlilik politikası geçerli olur. Teknik bir sorun bildirirken isterseniz cihaz
+bilgisi (platform, işletim sistemi ve uygulama sürümü) e-posta taslağına eklenir; göndermeden
+önce görebilirsiniz.</p>
 
 <h2>7. Üçüncü Taraf Hizmetler</h2>
 <p>Bu beta sürümünde uygulama; Sentry, RevenueCat, reklam ağları, analiz araçları veya PawMoti
-sunucularına veri göndermez. Bu hizmetlerin yazılım kitaplıkları yerel beta kurulum paketine
-dahil edilmez.</p>
+sunucularına veri göndermez. Android sürümünde uygulamanın internet erişim izni yoktur; bu
+nedenle uygulama ve içindeki hiçbir kitaplık bir sunucuya bağlanamaz. Pakette bulunan ama
+kullanılmayan bazı kitaplıklar (örneğin bildirim kitaplığıyla gelen Google Firebase kodu) da bu
+yüzden veri gönderemez.</p>
 
 <h2>8. Çocukların Verileri</h2>
 <p>PawMoti 13 yaş ve üzeri kullanıcılar için tasarlanmıştır ve 13 yaş altı çocuklara yönelik
@@ -241,15 +247,32 @@ onayı altında kullanmalıdır. 13 yaşından küçük kullanıcılardan bilere
 bu beta sürümünde uygulama zaten hiçbir kişisel veriyi dışarıya iletmez.</p>
 
 <h2>9. Haklarınız</h2>
-<p>Bu sürümde kişisel verileriniz yalnızca cihazınızda bulunduğundan verilerinizin tek hâkimi
-sizsiniz: "Verilerimi İndir" ile dışa aktarabilir (erişim ve taşınabilirlik), uygulama içinden
-düzenleyebilir (düzeltme) ve "Tüm Verileri Sıfırla" ile kalıcı olarak silebilirsiniz (silme).
-KVKK ve GDPR kapsamındaki sorularınız için
+<p>Bu sürümde kişisel verileriniz yalnızca sizin cihazınızda ve sizin kontrolünüzdedir:
+"Verilerimi İndir" ile dışa aktarabilir (erişim ve taşınabilirlik), uygulama içinden
+düzenleyebilir (düzeltme) ve "Tüm Verileri Sıfırla" ile kalıcı olarak silebilirsiniz (silme).</p>
+<p>KVKK'nın 11. maddesi uyarınca şu haklara sahipsiniz: (a) kişisel verilerinizin işlenip
+işlenmediğini öğrenme; (b) işlenmişse buna ilişkin bilgi talep etme; (c) işlenme amacını ve
+amacına uygun kullanılıp kullanılmadığını öğrenme; (ç) yurt içinde veya yurt dışında aktarıldığı
+üçüncü kişileri bilme; (d) eksik veya yanlış işlenmişse düzeltilmesini isteme; (e) KVKK'nın 7.
+maddesindeki şartlar çerçevesinde silinmesini veya yok edilmesini isteme; (f) düzeltme, silme
+veya yok etme işlemlerinin verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme; (g)
+münhasıran otomatik sistemlerle analiz edilmesi suretiyle aleyhinize bir sonucun ortaya
+çıkmasına itiraz etme; (ğ) kanuna aykırı işleme sebebiyle zarara uğramanız hâlinde zararın
+giderilmesini talep etme.</p>
+<p>Bu haklar ve diğer sorularınız için
 <a href="mailto:pawmotiapp@gmail.com">pawmotiapp@gmail.com</a> adresine başvurabilirsiniz;
 başvurulara en geç 30 gün içinde yanıt verilir ve kimliğinizi doğrulamaya yetecek bilgi
-isteyebiliriz. Gönderdiğiniz destek/gizlilik e-postaları, talebiniz sonuçlandıktan sonra en
-fazla 6 ay içinde silinir. Türkiye'de Kişisel Verileri Koruma Kurulu'na, AB'de ikamet
-ülkenizin denetim otoritesine şikâyet hakkınız saklıdır.</p>
+isteyebiliriz. Yazılı başvuru için posta adresimizi öğrenmek isterseniz önce bu adrese e-posta
+gönderebilirsiniz. Gönderdiğiniz e-postadaki bilgileri (e-posta adresiniz, mesajınız ve
+eklemeyi seçtiğiniz bilgiler) yalnızca talebinizi yanıtlamak için işleriz; hukuki sebebi,
+Kullanım Koşulları kapsamındaki ilişkimiz ve talebinizi yanıtlamaya yönelik meşru menfaatimizdir
+(KVKK m.5/2-c ve f), KVKK başvurularında ise hukuki yükümlülüğümüzdür (m.5/2-ç). Destek kutumuz
+Google'ın Gmail hizmetinde tutulduğu için e-postanız Türkiye dışındaki sunucularda işlenebilir;
+bunu istemiyorsanız yazılı başvuru yolunu kullanabilirsiniz. Gönderdiğiniz destek/gizlilik
+e-postaları, talebiniz sonuçlandıktan sonra en fazla 6 ay içinde silinir. Başvurunuzun
+reddedilmesi, cevabı yetersiz bulmanız veya süresinde cevap verilmemesi hâlinde Türkiye'de
+Kişisel Verileri Koruma Kurulu'na (KVKK m.14), AB'de ikamet ülkenizin denetim otoritesine
+şikâyet hakkınız saklıdır.</p>
 
 <h2>10. Değişiklikler</h2>
 <p>Bu politika güncellenebilir. Önemli değişiklikler, uygulama içinden veya bu sayfadan yürürlük
@@ -273,9 +296,10 @@ requests, please contact us by email first.</p>
 
 <h2>2. Summary: Your data stays on your device</h2>
 <p>PawMoti Local-Only Beta works without creating an account, without connecting to a server,
-and without any automatic data transmission. Your focus, breathing, and energy sessions, your
-preferences, game progress, and in-app records are stored only on your device. The app does not
-collect or send any personal data to any server for analytics, advertising, profiling, or
+and without any automatic data transmission. The data you enter in the app (session history,
+notes, mood and energy marks, tasks, calendar events, letters, pet and game progress, settings)
+is processed only on your device and only to provide the app's features to you. The app does
+not collect or send any personal data to any server for analytics, advertising, profiling, or
 telemetry purposes.</p>
 
 <h2>3. On-Device Storage and Security</h2>
@@ -297,12 +321,16 @@ infrastructure is used, and no data leaves your device because of notifications.
 <h2>6. Sharing You Initiate</h2>
 <p>When you choose to send feedback by email, export your data, or share images such as the Day
 Card, you transmit that data — at your own request — to the external application you select
-(email provider, messaging app, etc.); that service's own terms and privacy policy apply.</p>
+(email provider, messaging app, etc.); that service's own terms and privacy policy apply. When
+you report a technical problem, device information (platform, operating system and app version)
+is added to the email draft only if you choose; you can see it before sending.</p>
 
 <h2>7. Third-Party Services</h2>
 <p>In this beta release the app does not send data to Sentry, RevenueCat, advertising networks,
-analytics tools, or PawMoti servers. The software libraries of these services are not included
-in the local beta installation package.</p>
+analytics tools, or PawMoti servers. On Android the app has no internet access permission, so
+neither the app nor any library in it can connect to a server. Some libraries that are in the
+package but unused (for example Google Firebase code that comes with the notification library)
+therefore cannot send data either.</p>
 
 <h2>8. Children's Data</h2>
 <p>PawMoti is designed for users aged 13 and over and is not directed at children under 13.
@@ -311,15 +339,32 @@ guardian. We do not knowingly collect personal data from users under 13; in this
 the app does not transmit any personal data off the device in any case.</p>
 
 <h2>9. Your Rights</h2>
-<p>Because in this release your personal data exists only on your device, you are its sole
-controller: you can export it with "Download My Data" (access and portability), edit it in the
-app (rectification), and permanently delete it with "Reset All Data" (erasure). For questions
-under Turkey's Personal Data Protection Law No. 6698 (KVKK) and the GDPR, contact
+<p>In this release your personal data stays only on your device and under your control: you can
+export it with "Download My Data" (access and portability), edit it in the app (rectification),
+and permanently delete it with "Reset All Data" (erasure).</p>
+<p>Under Article 11 of Turkey's Personal Data Protection Law No. 6698 (KVKK) you have the right
+to: (a) learn whether your personal data is processed; (b) request information if it has been;
+(c) learn the purpose of processing and whether it is used accordingly; (ç) know the third
+parties to whom it is transferred in Turkey or abroad; (d) request correction if it is
+incomplete or inaccurate; (e) request its erasure or destruction under the conditions of KVKK
+Article 7; (f) request that correction, erasure or destruction be notified to third parties to
+whom it was transferred; (g) object to a result against you that arises from analysis
+exclusively by automated systems; (ğ) claim compensation for damage caused by unlawful
+processing.</p>
+<p>For these rights and any other questions, including under the GDPR, contact
 <a href="mailto:pawmotiapp@gmail.com">pawmotiapp@gmail.com</a>; requests are answered within 30
-days at the latest and we may ask for information to verify your identity. Support/privacy
-emails you send are deleted within 6 months after your request is resolved. You retain the
-right to lodge a complaint with Turkey's Personal Data Protection Board (KVK Kurulu) or, in
-the EU, with the supervisory authority of your country of residence.</p>
+days at the latest and we may ask for information to verify your identity. If you would like
+our postal address for a written application, email us first. We process the information in
+your email (your email address, your message and any information you choose to add) only to
+answer your request; the legal basis is our relationship under the Terms of Use and our
+legitimate interest in answering you (KVKK art. 5/2-c and f), and for KVKK applications our
+legal obligation (art. 5/2-ç). Because our support mailbox is kept in Google's Gmail service,
+your email may be processed on servers outside Turkey; if you do not want this, you can use the
+written application route. Support/privacy emails you send are deleted within 6 months after
+your request is resolved. If your application is rejected, you find the answer insufficient or
+it is not answered in time, you may complain to Turkey's Personal Data Protection Board (KVK
+Kurulu, KVKK art. 14) or, in the EU, to the supervisory authority of your country of
+residence.</p>
 
 <h2>10. Changes</h2>
 <p>This policy may be updated. Material changes are announced in the app or on this page,
@@ -332,7 +377,7 @@ rights of users residing in the EU remain unaffected.</p>
 
 <footer>
   <p>PawMoti · <a href="mailto:pawmotiapp@gmail.com">pawmotiapp@gmail.com</a></p>
-  <p class="effective">Yürürlük tarihi: 24 Eylül 2026 · Effective date: September 24, 2026</p>
+  <p class="effective">Yürürlük tarihi: 11 Ekim 2026 · Effective date: October 11, 2026</p>
 </footer>
 
 </main>
